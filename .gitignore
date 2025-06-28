@@ -1,0 +1,32 @@
+# Arquivos de ambiente virtual
+venv/
+/venv
+.venv/
+/.venv
+env/
+/env
+.env
+*.env
+
+# Arquivos de cache e compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração do PyCharm
+.idea/
+
+# Arquivos de dependências do pip
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Arquivos de log e banco de dados local
+*.log
+*.sqlite3
+
+# Assets
+*.pdf
