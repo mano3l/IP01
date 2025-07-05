@@ -21,9 +21,13 @@ def extract_data_from_pdf(pdf_path):
         i = 0
         while i < len(tokens):
             token = tokens[i]
+            # Verifica se o token é um horário no formato HH:MM
+            # e se há pelo menos dois tokens seguintes para 'tcs' e 'vendas'
             if re.match(r'^\d{2}:\d{2}$', token) and i + 2 < len(tokens):
                 try:
-                    sales_data.append({'hora': token, 'tcs': int(tokens[i + 1]), 'vendas': float(tokens[i + 2])})
+                    sales_data.append({'hora': token,
+                                       'tcs': int(tokens[i + 1]),
+                                       'vendas': float(tokens[i + 2])})
                     i += 3
                     continue
                 except ValueError:
