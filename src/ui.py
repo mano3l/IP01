@@ -6,7 +6,7 @@ import os
 import webbrowser
 import processing
 
-
+#AAAA
 class PreviewWindow(tk.Toplevel):
     def __init__(self, parent, extracted_data, template_path, log_callback):
         super().__init__(parent)
